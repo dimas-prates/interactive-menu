@@ -1,6 +1,14 @@
 ﻿Console.Clear();
 int option;
 int[] history = new int[0];
+
+/// <summary>
+/// Its manipulate an array and populate with past chosen options
+/// while adjust the array
+/// </summary>
+/// <param name="array">Current history to work with it</param>
+/// <param name="option">Current choosen option to add to the array</param>
+/// <returns> It returns a new/updated history array</returns>
 int[] OptionsHistory(int[] array, int option)
 {
     Array.Resize(ref array, array.Length + 1);
